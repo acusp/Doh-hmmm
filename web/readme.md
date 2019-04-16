@@ -1,5 +1,7 @@
 ## Delightful Loading Screen
 
-> Ref:https://medium.freecodecamp.org/how-to-build-a-delightful-loading-screen-in-5-minutes-847991da509f
+> Ref: [How to Build a Delightful Loading Screen in 5 Minutes](https://medium.freecodecamp.org/how-to-build-a-delightful-loading-screen-in-5-minutes-847991da509f)
 
-[loading_screen](loading/index.html)
+[source code](loading/)
+
+[demo](https://acusp.info/Programming/web/loading/index.html)
