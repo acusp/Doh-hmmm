@@ -18,4 +18,4 @@ animation
 @keyframes
 ```
 
-源码：[source code](loading/)   页面展示：[demo](https://acusp.info/Programming/web/loading/index.html)
+源码：[source code](loading/)   页面展示：[demo](https://acusp.info/Programming/web/loading/loading.html)
