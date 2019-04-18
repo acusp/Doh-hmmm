@@ -5,9 +5,9 @@
 
 ## coder
 
-算法练习题集合，如：剑指offer，Leetcode等
+算法练习题集合
 
-[README](coder/readme.md)
+[剑指offer](coder/offer/readme.md)
 
 ## web
 
