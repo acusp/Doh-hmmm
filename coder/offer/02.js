@@ -4,5 +4,7 @@ function replaceSpace(str) {
     return str.replace(pattern, "%20");
 }
 
+
+// test result
 let str = "We Are Happy.";
 console.log(replaceSpace(str));
