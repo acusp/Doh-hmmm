@@ -1,4 +1,10 @@
-## 页面加载动画
+## Baidu_IFE
+
+* [baidu_ife](baidu_ife/readme.md)
+
+## 其它
+
+### 页面加载动画
 
 > Ref: [How to Build a Delightful Loading Screen in 5 Minutes](https://medium.freecodecamp.org/how-to-build-a-delightful-loading-screen-in-5-minutes-847991da509f)
 
