@@ -1,6 +1,5 @@
 // Solution 1:  from array[0][0] to array[row][col]
-function Find1(target, array)
-{
+function Find1(target, array) {
     for (let i = 0; i < array.length; ++i) {
         for (let j = 0; j < array[i].length; ++j) {
             if (target === array[i][j]) {

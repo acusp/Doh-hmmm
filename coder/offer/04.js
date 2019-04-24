@@ -3,8 +3,7 @@ function TreeNode(x) {
     this.left = null;
     this.right = null;
 }
-function reConstructBinaryTree(pre, vin)
-{
+function reConstructBinaryTree(pre, vin) {
     if (pre.length === 0 || vin.length === 0) {
         return null;
     }
@@ -25,5 +24,3 @@ function reConstructBinaryTree(pre, vin)
     
     return root;
 }
-
-// test
