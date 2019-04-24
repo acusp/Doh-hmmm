@@ -1,13 +1,16 @@
-<!-- TOC -->
-- [CSS](#css)
-  - [页面加载动画](#%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB)
-- [Javascript](#javascript)
-  - [获取点击 `<li>` 标签的索引值](#%E8%8E%B7%E5%8F%96%E7%82%B9%E5%87%BB-li-%E6%A0%87%E7%AD%BE%E7%9A%84%E7%B4%A2%E5%BC%95%E5%80%BC)
-  - [解码被多次编码的 URL](#%E8%A7%A3%E7%A0%81%E8%A2%AB%E5%A4%9A%E6%AC%A1%E7%BC%96%E7%A0%81%E7%9A%84-url)
-- [其它](#%E5%85%B6%E5%AE%83)
-  - [Baidu_IFE](#baiduife)
 
-<!-- /TOC -->
+<!-- vim-markdown-toc GFM -->
+
+* [CSS](#css)
+    - [页面加载动画](#页面加载动画)
+* [Javascript](#javascript)
+    - [获取点击 `<li>` 标签的索引值](#获取点击-li-标签的索引值)
+    - [解码被多次编码的 URL](#解码被多次编码的-url)
+* [其它](#其它)
+    - [Baidu_IFE](#baidu_ife)
+
+<!-- vim-markdown-toc -->
+
 ## CSS
 
 ### 页面加载动画
