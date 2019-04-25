@@ -93,12 +93,12 @@ let list = ul.getElementsByTagName("li");
 ul.addEventListener("click", function (ev) {
     var ev = ev || window.event;
     var target = ev.target || ev.srcElemnt;
-  
-    for(var i = 0, len = list.length; i < len; i++){  
-        if(list[i] === target){  
+
+    for(var i = 0, len = list.length; i < len; i++){
+        if(list[i] === target){
 			console.log(i);
-        }  
-    }	
+        }
+    }
 });
 ```
 
@@ -122,3 +122,4 @@ function decode(input) {
 
 console.log(decode(url));
 ```
+
