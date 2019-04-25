@@ -6,8 +6,6 @@
 * [Javascript](#javascript)
     - [获取点击 `<li>` 标签的索引值](#获取点击-li-标签的索引值)
     - [解码被多次编码的 URL](#解码被多次编码的-url)
-* [其它](#其它)
-    - [Baidu_IFE](#baidu_ife)
 
 <!-- vim-markdown-toc -->
 
@@ -124,10 +122,3 @@ function decode(input) {
 
 console.log(decode(url));
 ```
-
-
-## 其它
-
-### Baidu_IFE
-
-* [baidu_ife](baidu_ife/readme.md)
