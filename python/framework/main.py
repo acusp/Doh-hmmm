@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import argparse
-from demo_core import demo_task
+from core import demo_task
 
 
 def __show_version():

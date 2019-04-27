@@ -4,7 +4,7 @@ import os
 import sys
 
 
-class SfOs(object):
+class DemoOs(object):
     def __init__(self):
         pass
 
