@@ -10,7 +10,7 @@
 
 **代码实现**
 
-[javascript](01.js)
+[javascript](javascript/01.js)
 
 
 ### 02. 替换空格
@@ -23,7 +23,7 @@
 
 **代码实现**
 
-[javascript](02.js)
+[javascript](javascript/02.js)
 
 
 ### 03. 从尾到头打印链表
@@ -36,7 +36,7 @@
 
 **代码实现**
 
-[javascript](03.js)
+[javascript](javascript/03.js)
 
 
 ### 04. 重建二叉树
@@ -49,7 +49,7 @@
 
 **代码实现**
 
-[javascript](04.js)
+[javascript](javascript/04.js)
 
 
 ### 05. 用两个栈实现队列
@@ -62,7 +62,7 @@
 
 **代码实现**
 
-[javascript](05.js)
+[javascript](javascript/05.js)
 
 
 ### 06. 旋转数组的最小数字
@@ -75,7 +75,7 @@
 
 **代码实现**
 
-[javascript](06.js)
+[javascript](javascript/06.js)
 
 
 ### 07. 斐波那契数列
@@ -89,12 +89,12 @@ n<=39
 
 **代码实现**
 
-[javascript](07.js)
+[javascript](javascript/07.js)
 
 
 ### 08. 跳台阶
 
-**知识点**: 
+**知识点**:
 
 **题目描述**
 
@@ -102,4 +102,4 @@ n<=39
 
 **代码实现**
 
-[javascript](08.js)
+[javascript](javascript/08.js)
