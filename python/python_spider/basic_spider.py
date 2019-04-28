@@ -13,5 +13,5 @@ def getHTMLText(url):
         return "raise an exception"
 
 if __name__ == "__main__":
-    url = "http://www.baidu.com"
+    url = "https://acusp.info"
     print(getHTMLText(url))

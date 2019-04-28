@@ -13,13 +13,14 @@ def getHTMLText(url):
     except:
         return "raise an exception"
 
-def main():
+def main(url, times):
     starttime = time.time()
-    url = "http://www.baidu.com"
-    for i in range(100):
+    for i in range(times):
         getHTMLText(url)
     endtime = time.time()
     return endtime - starttime
 
 if __name__ == '__main__':
-    print('爬取100次的时间是：', main())
+    url = "https://acusp.info"
+    times = 1
+    print('爬取100次的时间是：', main(url, times), "秒")

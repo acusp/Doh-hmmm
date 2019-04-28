@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 import requests
 
-keyword = "Python"
+keyword = input("Please input keywords you want to search: ")
 try:
     # baidu search api: ?wd=
     kv = {'wd':keyword}

@@ -8,7 +8,7 @@ import requests
 """
 
 url = "https://bbs.qn.img-space.com/201809/11/d7e3e9831ba7e1f20504527845aba503.jpg"
-root = "/Users/acusp/Desktop/images"
+root = "/Users/acusp/Desktop/tmp"
 path = os.path.join(root, url.split('/')[-1])
 
 try:
@@ -18,9 +18,9 @@ try:
         r = requests.get(url)
         with open(path, 'wb') as f:
             f.write(r.content)
-            print("file saved success")
+            print("image saved success")
     else:
-        print("file already existed")
+        print("image already existed")
 except Exception as e:
     print(e)
     print('get this page failure')
