@@ -19,13 +19,14 @@ def fillUnivList(ulist, html):
     for tr in soup.find("tbody").children:
         if isinstance(tr, bs4.element.Tag):
             tds = tr("td")
-            ulist.append([tds[0].string, tds[1].string, tds[2].string])
+            ulist.append([tds[0].string, tds[1].string, tds[3].string])
 
 def printUnivList(ulist, num):
-    print("{:<}\t{:<}\t{:^10}".format("排名", "学校名称", "总分"))
+    tplt = "{0:^10}\t{1:{3}^10}\t{2:^10}"
+    print(tplt.format("排名", "学校名称", "总分", chr(12288)))
     for i in range(num):
         u = ulist[i]
-        print("{:<}\t{:<}\t{:^10}".format(u[0], u[1], u[2]))
+        print(tplt.format(u[0], u[1], u[2], chr(12288)))
 
 def main():
     uinfo = []
