@@ -16,3 +16,5 @@
 ## Beautiful Soup 
 
 [hello_bs4.py](hello_bs4.py) - BeautifulSoup hello world
+
+[university_rank.py](university_rank.py) - 爬取中国大学排名
