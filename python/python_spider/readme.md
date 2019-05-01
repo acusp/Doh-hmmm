@@ -1,6 +1,6 @@
 
 
-## request
+## request + bs4
 
 [basic_spider.py](basic_spider.py) - 通用代码框架
 
@@ -12,9 +12,11 @@
 
 [user-agent.py](user-agent.py) - 设置 http 请求头中的 user-agent
 
-
-## Beautiful Soup 
-
 [hello_bs4.py](hello_bs4.py) - BeautifulSoup hello world
 
 [university_rank.py](university_rank.py) - 爬取中国大学排名
+
+~~[taobao_goods_price.py](taobao_goods_price.py) - 爬取淘宝商品名称与价格(淘宝反爬虫会重定向页面，待解决)~~
+
+
+## Scrapy
