@@ -20,3 +20,7 @@
 
 
 ## Scrapy
+
+> Ref: https://docs.scrapy.org/en/latest/intro/tutorial.html
+
+target website: http://quotes.toscrape.com/
