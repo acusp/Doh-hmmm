@@ -16,7 +16,7 @@ function jumpFloor(number) {
     return f1;
 }
 
-// use recursiv
+// use the recursive method
 function jumpFloor2(number) {
     if (number <= 2) {
         return number;
