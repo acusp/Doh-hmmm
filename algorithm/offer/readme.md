@@ -128,4 +128,4 @@ n<=39
 
 **代码实现**
 
-[javascript](javascript/010.js)
+[javascript](javascript/10.js)
