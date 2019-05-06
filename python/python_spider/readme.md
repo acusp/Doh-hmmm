@@ -24,3 +24,5 @@
 > Ref: https://docs.scrapy.org/en/latest/intro/tutorial.html
 
 Crawling http://quotes.toscrape.com, and restore items to a JSON file: `items.jl`.
+
+[source](scrapy_tutorial/)

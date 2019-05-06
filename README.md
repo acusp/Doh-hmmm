@@ -7,7 +7,7 @@
 
 算法练习题集合
 
-[剑指offer](coder/offer/readme.md)
+[剑指offer](algorithm/offer/readme.md)
 
 
 ## web
