@@ -12,6 +12,10 @@
 
 [javascript](javascript/01.js)
 
+<details>
+<summary>思路</summary>
+</details>
+
 
 ### 02. 替换空格
 
@@ -24,6 +28,10 @@
 **代码实现**
 
 [javascript](javascript/02.js)
+
+<details>
+<summary>思路</summary>
+</details>
 
 
 ### 03. 从尾到头打印链表
@@ -129,3 +137,29 @@ n<=39
 **代码实现**
 
 [javascript](javascript/10.js)
+
+
+### ### 11. 二进制中 1 的个数
+
+**知识点**: 二进制数，位操作
+
+**题目描述**
+
+输入一个整数，输出该数二进制表示中1的个数。其中负数用补码表示。
+
+**代码实现**
+
+[javascript](javascript/11.js)
+
+
+### ### 12. 数值的整数次方
+
+**知识点**: 
+
+**题目描述**
+
+给定一个double类型的浮点数base和int类型的整数exponent。求base的exponent次方。
+
+**代码实现**
+
+[javascript](javascript/12.js)
