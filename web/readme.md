@@ -6,6 +6,7 @@
 * [Javascript](#javascript)
     - [获取点击 `<li>` 标签的索引值](#获取点击-li-标签的索引值)
     - [解码被多次编码的 URL](#解码被多次编码的-url)
+    - [选项卡实现](#选项卡实现)
 
 <!-- vim-markdown-toc -->
 
@@ -31,7 +32,7 @@ animation
 @keyframes
 ```
 
-源码：[source code](loading/)   页面展示：[demo](https://acusp.info/Programming/web/loading/loading.html)
+源码：[css/source code](loading/)   页面展示：[demo](https://acusp.info/Programming/web/loading/loading.html)
 
 
 ## Javascript
@@ -123,3 +124,6 @@ function decode(input) {
 console.log(decode(url));
 ```
 
+### 选项卡实现
+
+[选项卡](javascripy/tab_control.html)
