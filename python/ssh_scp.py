@@ -46,10 +46,10 @@ def scp2(ip, user, passwd, dst_path, filename):
         print("upload faild!")
 
 def main():
-    host = raw_input('Hostname:')
-    user = raw_input('User:')
+    host = input('Hostname:')
+    user = input('User:')
     password = getpass.getpass()
-    command = raw_input('Command:')
+    command = input('Command:')
     child = ssh_command(user, host, password, command)
     child.expect(pexpect.EOF)
     print(child.before)

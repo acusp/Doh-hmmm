@@ -19,10 +19,8 @@ web 相关代码
 
 ## Python
 
-python 相关代码
+[misc](python/misc/misc.md)
 
-[python 爬虫](python/python_spider/readme.md)
+[python 爬虫](python/python_spider/spider.md)
 
-Tornado Web
-
-[tornado demo](python/tornado_web)
+[tornado](python/tornado)

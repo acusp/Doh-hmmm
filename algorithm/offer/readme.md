@@ -215,3 +215,29 @@ n<=39
 **代码实现**
 
 [javascript](javascript/16.js)
+
+
+### 17. 
+
+**知识点**: 
+
+**题目描述**
+
+
+
+**代码实现**
+
+[javascript](javascript/17.js)
+
+
+### 18. 
+
+**知识点**: 
+
+**题目描述**
+
+
+
+**代码实现**
+
+[javascript](javascript/18.js)
