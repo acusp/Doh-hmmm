@@ -5,8 +5,8 @@
 } */
 
 function HasSubtree(pRoot1, pRoot2) {
-    // write code here
     let result = false;
+
     if (pRoot1 && pRoot2) {
         if (pRoot1.val === pRoot2.val) {
             result = isMatch(pRoot1, pRoot2);
@@ -23,11 +23,11 @@ function HasSubtree(pRoot1, pRoot2) {
 }
 
 function isMatch(tree1, tree2) {
-    if (!tree1.val) {
-        return false;
-    }
-    if (!tree2.val) {
+    if (!tree2) {
         return true;
+    }
+    if (!tree1) {
+        return false;
     }
     if (tree1.val !== tree2.val) {
         return false;
