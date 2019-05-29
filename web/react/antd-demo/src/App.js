@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { LocaleProvider, DatePicker, message, Alert } from 'antd';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
-import 'antd/dist/antd.css';
-import './index.css';
+import './App.css';
 
 class App extends Component {
   state = {
