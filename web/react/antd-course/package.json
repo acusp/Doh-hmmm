@@ -1,0 +1,15 @@
+{
+  "name": "antd-course",
+  "version": "1.0.0",
+  "description": "> Ant Design 实战教程: https://www.yuque.com/ant-design/course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "umi": "^2.7.6"
+  }
+}
