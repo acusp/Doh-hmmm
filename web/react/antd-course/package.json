@@ -4,12 +4,15 @@
   "description": "> Ant Design 实战教程: https://www.yuque.com/ant-design/course",
   "main": "index.js",
   "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "umi": "^2.7.6"
+    "umi": "^2.7.6",
+    "umi-plugin-react": "^1.8.4"
   }
 }
