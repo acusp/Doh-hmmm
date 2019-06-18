@@ -26,6 +26,12 @@ class BasicLayout extends Component {
                             <Menu.Item key='3'><Link to='/dashboard/monitor'>监控页</Link></Menu.Item>
                             <Menu.Item key='4'><Link to='/dashboard/workplace'>工作台</Link></Menu.Item>
                         </SubMenu>
+                        <Menu.Item key='5'>
+                            <Link to='/puzzlecards'>
+                                <Icon type="question-circle" />
+                                <span>Puzzles</span>
+                            </Link>
+                        </Menu.Item>
                     </Menu>
                 </Sider>
                 <Layout>
@@ -35,7 +41,7 @@ class BasicLayout extends Component {
                             { this.props.children }
                         </div>
                     </Content>
-                    <Footer style={{ textAlign: 'center' }}>Ant Design &Copyright Created by Acusp</Footer>
+                    <Footer style={{ textAlign: 'center' }}>Ant Design &copy; Created by Acusp</Footer>
                 </Layout>
             </Layout>
         )
