@@ -32,4 +32,11 @@ export default {
             },
         ]
     }],
+    // 解决跨域请求问题，使用本地服务器做代理
+    proxy: {
+        '/api': {
+            target: 'https://randomuser.me',
+            changeOrigin: true,
+        },
+    },
 };

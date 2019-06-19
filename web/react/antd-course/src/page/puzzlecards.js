@@ -32,6 +32,12 @@ const mapDispatchToProps = (dispatch) => {
   cardList: puzzlecards.data,
 }))
 export default class PuzzleCardsPage extends Component {
+  componentDidMount() {
+    const { dispatch } = this.props;
+    dispatch({
+      type: 'puzzlecards/queryInitCards',
+    });
+  }
 
   addNewCard = (newCard) => {
     const { dispatch } = this.props;
