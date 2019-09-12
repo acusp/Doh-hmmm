@@ -3,6 +3,5 @@ __pycache__
 .ropeproject
 *.pyc
 .idea/
-.vscode/
 yarn.lock
 node_modules/
