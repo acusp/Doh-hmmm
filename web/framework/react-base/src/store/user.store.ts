@@ -7,7 +7,7 @@ export class UserStore {
   public userInfo: IUserInfo | null = null;
 
   @action
-  public login = (params: ILoginParams) => {
+  public login = async (params: ILoginParams) => {
     return request
       .post('/login', params)
       .then((res: any) => {
