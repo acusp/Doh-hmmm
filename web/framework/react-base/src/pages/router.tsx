@@ -5,8 +5,7 @@ import { IRouterComponent, IRouter } from 'interface/router.interface';
 import { inject, observer } from 'mobx-react';
 import { UserStore } from 'store/user.store';
 import { CustomHashRouter } from 'components/HOC/CustomRouter';
-import { PrivateRoute } from 'components/HOC/PrivateRoute';
-import { BasicLayout } from 'components/layout/BasicLayout';
+import { BasicLayout } from 'components/BasicLayout';
 
 export const routerLoadableComponents = {
   Home: makeLoadableComponent(() => import('pages/Home')),
@@ -35,10 +34,6 @@ export class Router extends React.Component<Props> implements IRouterComponent<R
 
   public Login = dynamicImport(() => import('pages/Login'));
 
-  public handleLoginPermission = async () => {
-    return true;
-  };
-
   public routerRenderer = () => {
     this.router.map(i =>
       i.path && i.component ? (
@@ -57,12 +52,7 @@ export class Router extends React.Component<Props> implements IRouterComponent<R
         <BasicLayout menus={this.router} userInfo={userInfo} logout={logout}>
           <Switch>
             <Route exact path="/login" component={this.Login} />
-            <Route
-              path="/"
-              render={() => (
-                <PrivateRoute component={this.routerRenderer} handlePermission={this.handleLoginPermission} />
-              )}
-            />
+            {this.routerRenderer}
             <Route path="**" render={() => <Redirect to="/" />} />
           </Switch>
         </BasicLayout>
