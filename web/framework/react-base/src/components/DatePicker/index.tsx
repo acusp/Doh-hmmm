@@ -8,7 +8,7 @@ function MyDatePicker(props: any) {
 	var newProps = {
 		...props,
 		onChange: function(date: Moment, dateStrings: string) {
-			transformMoment(date, serverFormat);
+			date && transformMoment(date, serverFormat);
 			oldChange(date, dateStrings);
 		},
 	};
