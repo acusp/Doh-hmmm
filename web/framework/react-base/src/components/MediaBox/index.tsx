@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Modal } from 'palmax-ui';
+import { Modal } from 'antd';
 import styles from './index.module.scss';
 
 interface IProps {

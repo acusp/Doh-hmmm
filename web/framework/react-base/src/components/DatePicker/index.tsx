@@ -1,5 +1,5 @@
 import React from 'react';
-import { DatePicker } from 'palmax-ui';
+import { DatePicker } from 'antd';
 import { Moment } from 'moment';
 
 function MyDatePicker(props: any) {
