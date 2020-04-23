@@ -1,8 +1,6 @@
 import shajs from 'sha.js';
 import base32Encode from 'base32-encode';
 
-// 密码加密算法
-
 /** Convert String to Uint8Array */
 function str2Uint8Array(input: string): Uint8Array {
   const encoder = new TextEncoder();
@@ -10,7 +8,7 @@ function str2Uint8Array(input: string): Uint8Array {
   return view;
 }
 
-// 用户密码加密方式：http://wiki.palmax.cn/pages/viewpage.action?pageId=29328417
+// password encrypt method: readme.md
 export function encrypt(password: string): string {
   const pwdBytes = str2Uint8Array(password);
   const offset = (pwdBytes.length % 3) + 1;
