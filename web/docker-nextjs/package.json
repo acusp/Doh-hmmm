@@ -1,0 +1,17 @@
+{
+  "name": "docker-nextjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "acusp",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^9.4.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
