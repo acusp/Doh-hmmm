@@ -69,10 +69,10 @@ function modifyDataJs(jsPath, callback) {
 
 // modify c2runtime.js
 function removeStr(origin, reg) {
-  return origin.replace(reg, '\n // Palmax delete \n');
+  return origin.replace(reg, '\n // AC delete \n');
 }
 function replaceStr(origin, reg, newStr) {
-  return origin.replace(reg, '\n // Palmax \n' + newStr);
+  return origin.replace(reg, '\n // AC replace \n' + newStr);
 }
 
 function importMediaStr() {
@@ -80,7 +80,7 @@ function importMediaStr() {
   const getImportMediaCodes = (media) => {
     return `import ${media.substring(0, media.indexOf('.'))} from './media/${media}' \n`
   }
-  return '\n // Palmax \n' + medias.reduce((cur, next) => cur + getImportMediaCodes(next), '')
+  return '\n // AC import \n' + medias.reduce((cur, next) => cur + getImportMediaCodes(next), '')
 }
 
 function getAudioStr() {
@@ -93,6 +93,20 @@ function getAudioStr() {
 		}`
   })
 }
+
+function audioBase64toArraybuffer() {
+  return `
+    var binary_string = atob(src_.replace(/^[^,]+,/, ''));
+	var len = binary_string.length;
+	var bytes = new Uint8Array(len);
+	for (var i = 0; i < len; i++) {
+		bytes[i] = binary_string.charCodeAt(i);
+	}
+	self.audioData = bytes.buffer;
+	self.decodeAudioBuffer();
+  `
+}
+
 function modifyRuntimeJs(jsPath) {
   if (!fs.existsSync(jsPath)) {
     return console.warn(`The file of ${abPath} is not exists`);
@@ -117,8 +131,13 @@ function modifyRuntimeJs(jsPath) {
       // load Data数据
       data = replaceStr(data, /\/\/ WKWebView in Cordova[\s\S]+xhr\.send\(\);/, 'self.loadProject(DATA)');
 
-      data = replaceStr(data, /function C2AudioBuffer\(src_, type_, is_music\)[^{]+{/, `function C2AudioBuffer\(src_, type_, is_music)\n{\n${getAudioStr()}`)
-      fs.writeFileSync(resolvePath('main.js'), data, 'utf8');
+	  // 函数 C2AudioBuffer 中替换音频文件
+      data = replaceStr(data, /function C2AudioBuffer\(src_, type_, is_music\)[^{]+{/, `function C2AudioBuffer\(src_, type_, is_music){\n${getAudioStr()}`)
+      
+	  // 函数 C2AudioBuffer 中转换音频文件类型：base64 -> arraybuffer
+      data = replaceStr(data, /request = new XMLHttpRequest\(\)[\s\S]+request.send\(\);/, `${audioBase64toArraybuffer()}`)
+	  
+	  fs.writeFileSync(resolvePath('main.js'), data, 'utf8');
       console.info('main.js generate successfully..begin webpack compress');
       resolve();
     })
@@ -132,6 +151,11 @@ function insertJsToHtml() {
         <head>
           <meta charset="UTF-8" />
           <title>guaguaka</title>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+          />
+          <meta name="generator" content="Construct 3" />
         </head>
         <body>
           <div id="fb-root"></div>

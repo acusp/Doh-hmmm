@@ -82,6 +82,7 @@ const config = {
               name: 'imgs/[name].[ext]'
             }
           },
+          'image-webpack-loader'
         ],
 
       },
